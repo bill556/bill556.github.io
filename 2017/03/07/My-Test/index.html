@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>My Test | Bill</title>
+  <title>SolveProblems-小米手机不能直接运行Android Studio程序 | Bill</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -15,16 +15,26 @@
     <meta name="keywords" content="Bill, Android, Java, 移动开发" />
   
 
-  <meta name="description" content="一个爱技术的猿-.-">
+  <meta name="description" content="Problem description:Android Studio升级到2.3版本之后，小米手机MIUI不能直接点击Run运行Android Studio程序，报如下错误：
+
+Installation failed with message Failed to establish session.It is possible that this issue is resolved by unin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My Test">
+<meta property="og:title" content="SolveProblems-小米手机不能直接运行Android Studio程序">
 <meta property="og:url" content="http://yoursite.com/2017/03/07/My-Test/index.html">
 <meta property="og:site_name" content="Bill">
-<meta property="og:description" content="一个爱技术的猿-.-">
-<meta property="og:updated_time" content="2017-03-07T07:00:28.000Z">
+<meta property="og:description" content="Problem description:Android Studio升级到2.3版本之后，小米手机MIUI不能直接点击Run运行Android Studio程序，报如下错误：
+
+Installation failed with message Failed to establish session.It is possible that this issue is resolved by unin">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2011538-4b0821a4c12bceec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2011538-59bd4924e2c5ee22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2011538-f71a6c2c73cf995d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2017-03-08T05:17:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Test">
-<meta name="twitter:description" content="一个爱技术的猿-.-">
+<meta name="twitter:title" content="SolveProblems-小米手机不能直接运行Android Studio程序">
+<meta name="twitter:description" content="Problem description:Android Studio升级到2.3版本之后，小米手机MIUI不能直接点击Run运行Android Studio程序，报如下错误：
+
+Installation failed with message Failed to establish session.It is possible that this issue is resolved by unin">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2011538-4b0821a4c12bceec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
   
 
@@ -186,7 +196,7 @@
 <div class="content content-post CENTER">
    <article id="post-My-Test" class="article article-type-post" itemprop="blogPost">
   <header class="article-header">
-    <h1 class="post-title">My Test</h1>
+    <h1 class="post-title">SolveProblems-小米手机不能直接运行Android Studio程序</h1>
 
     <div class="article-meta">
       <span>
@@ -226,7 +236,24 @@
 
   <div class="article-content">
     
-      
+      <p>Problem description:<br>Android Studio升级到2.3版本之后，小米手机MIUI不能直接点击Run运行Android Studio程序，报如下错误：</p>
+<blockquote>
+<p>Installation failed with message Failed to establish session.<br>It is possible that this issue is resolved by uninstalling an existing version of apk if it is present，and then re-installing.</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/2011538-4b0821a4c12bceec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Warning.png"></p>
+<p>Solution:<br>方法一 ：设置Android Studio 中Instant Run中的选项为不选中</p>
+<ol>
+<li>根据以下路径，找到Instant Run中的选项<br>  <pre>File ——&gt; Settings ——&gt; Build, Execution,Deployment ——&gt; Instant Run</pre></li>
+<li>将Enable Instant Run to hot swap code/resource changes on deploy(default enabled)的选择框取消。<br><img src="http://upload-images.jianshu.io/upload_images/2011538-59bd4924e2c5ee22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Solution1.png"></li>
+<li>点击Apply，保存设置就OK了。<br>这个时候就可以在小米手机上点击Run直接运行程序了。</li>
+</ol>
+<p>方法二：在手机的开发者选项中关闭MIUI优化</p>
+<ol>
+<li>进入到手机的开发者模式，在最下面有一个启用MIUI优化选项，关闭这个选项会提示重启手机，选择关闭并重启重新启动后，再次运行我们的程序，就可以在手机上运行了。</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/2011538-f71a6c2c73cf995d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="关闭启用MIUI优化.png"></p>
+<p>至此，由于升级2.3后默认开启的Instans Run功能带来的困扰即可解决~</p>
+
     
   </div>
 </article>
@@ -236,7 +263,7 @@
 
    
   <div class="box-prev-next clearfix">
-    <a class="show pull-left" href="/2016/11/15/hello-world/">
+    <a class="hide pull-left" href="/">
         <i class="icon icon-angle-left"></i>
     </a>
     <a class="hide pull-right" href="/">
